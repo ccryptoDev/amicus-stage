@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "amicus",
+      "script": "app.js",
+      "exec_mode": "fork",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss.SSS",
+      "out_file": "~/.pm2/logs/amicus.log",
+      "error_file": "~/.pm2/logs/amicus.log",
+      "max_memory_restart": "1024M",
+      "env": {
+        "PORT": 18190,
+        "NODE_ENV": "staging",
+        "TOKEN_SECRET": "m49w10tt4msjbdrrtonp048xvnspwbncqmesxgxqvuwoeaqaeuxylcvfy3q75uvxs4cq4g4fnhfj385glcwcxij7jecrv37bx9qp9nba1u7ux6q3hm9lgeltl3am3j29",
+        "TOKEN_TTL": "60000s",
+        "REACT_APP_BASE_URL": "https://amicus-ui.alchemylms.com"
+      }
+    }
+  ]
+}
